@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Following the DRY principle 'Don't repeat yourself' */
+      table,
+      td,
+      th {
+        /* 3 values are required for 'border' */
+        /* 1st value. the thickness of the border */
+        /* 2nd value. the style of the border */
+        /* 3rd value. color of the border */
+        border: 1px solid gray;
+        border-collapse: collapse; /* To remove the double lines */
+        padding: 5px; /* To give spacing */
+      }
+
+      tfoot {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <!-- Colspan is used to specify the amount of column space it should occupy -->
+          <th colspan="2">Expenses</th>
+        </tr>
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marketing</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>$300</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
